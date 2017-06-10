@@ -1,4 +1,4 @@
-package ichat;
+ package ichat;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
