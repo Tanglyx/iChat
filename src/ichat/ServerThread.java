@@ -298,7 +298,7 @@ public class ServerThread implements Runnable{
 		try{
 			//获取收信人Key
 			masterDB.connSQL();
-			String sql = "select * from Key_table where username = '" + jsonObj.getString("SendTo")+ "';";  
+			String sql = "select * from key_table where username = '" + jsonObj.getString("SendTo")+ "';";  
 			ResultSet resultSet = masterDB.selectSQL(sql);  
 			String sqlKey = new String();
 			if(resultSet.next()){
